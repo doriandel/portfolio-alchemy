@@ -4,6 +4,7 @@ import "../styles/global.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { colors } from "../themes/foudations/colors";
+import { appWithTranslation } from "next-i18next";
 
 const theme = extendTheme({ colors });
 
@@ -20,4 +21,4 @@ function App({ Component, pageProps }) {
   );
 }
 
-export default App;
+export default appWithTranslation(App);
