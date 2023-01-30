@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import '../styles/global.css';
 import { useTheme } from '@chakra-ui/react';
-import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import { Providers } from '@/Providers';
 import { Viewport } from '@/components/Viewport';
@@ -47,4 +46,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default appWithTranslation(App);
+export default App;
